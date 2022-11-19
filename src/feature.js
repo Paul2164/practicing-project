@@ -44,3 +44,23 @@ promise7.then(function(result) {
         console.log(value)
     })
 })
+
+
+let promises = Promise.resolve("successful")
+
+let promises1 = Promise.reject("oooops")
+
+let promises2 = new Promise (function(resolve,reject){
+
+    setTimeout(function() {
+
+        resolve("Login successful")
+    })
+})
+
+let promises3 = Promise.any([promises,promises1,promises2])
+
+promises3.then(function(values) {
+
+    console.log(values)
+})
