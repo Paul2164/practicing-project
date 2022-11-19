@@ -70,6 +70,6 @@ function sum(a,b) {
     return a + b
 }
 
-let add = sum(3,4)
+let add1 = sum(3,4)
 
-console.log(add)
+console.log(add1)
