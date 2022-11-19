@@ -65,11 +65,14 @@
 //     console.log(values)
 // })
 
+
+
 function sum(a,b) {
 
     return a + b
 }
 
-let add1 = sum(3,4)
 
-console.log(add1)
+let add= sum(2,3)
+
+console.log(add)
